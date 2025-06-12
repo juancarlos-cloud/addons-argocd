@@ -1,10 +1,10 @@
-clusterName: "Eks-Cluster-Test"
+clusterName: REPLACE_ME
 
-region: us-east-1
+region: REPLACE_ME
 
-vpcId: "vpc-0848c34c7e0a6f6eb"
+vpcId: REPLACE_ME
 
 serviceAccount:
   create: true
 
-replicaCount: 4
+replicaCount: 1

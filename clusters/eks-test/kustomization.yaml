@@ -1,0 +1,13 @@
+resources:
+  - app-project.yaml
+  - ./alb-controller
+
+nameSuffix: -eks-test
+
+patches:
+  - target:
+      kind: Application
+    patch: |-
+      - op: replace
+        path: /spec/project
+        value: -eks-test

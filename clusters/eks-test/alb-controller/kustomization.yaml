@@ -1,0 +1,10 @@
+resources:
+  - ../../../base/alb-controller/
+
+patches:
+  - target:
+      kind: Application
+    patch: |-
+      - op: add
+        path: /spec/sources/0/helm/valueFiles/1
+        value: $values/clusters/eks-test/alb-controller/values.yaml
