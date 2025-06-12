@@ -1,0 +1,10 @@
+clusterName: "Eks-Cluster-Test"
+
+region: us-east-1
+
+vpcId: "vpc-0848c34c7e0a6f6eb"
+
+serviceAccount:
+  create: true
+
+replicaCount: 4
