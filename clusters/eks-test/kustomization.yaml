@@ -2,12 +2,12 @@ resources:
   - app-project.yaml
   - ./alb-controller
 
-nameSuffix: -eks-test
+nameSuffix: -eks-hub-v2
 
-patches:
-  - target:
-      kind: Application
-    patch: |-
-      - op: replace
-        path: /spec/project
-        value: -eks-test
+# patches:
+#   - target:
+#       kind: Application
+#     patch: |-
+#       - op: replace
+#         path: /spec/project
+#         value: cluster-eks-hub-v2

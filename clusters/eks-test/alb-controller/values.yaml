@@ -1,10 +1,11 @@
-clusterName: "Eks-Cluster-Test"
+clusterName: Eks-Cluster-Test
 
 region: us-east-1
 
-vpcId: "vpc-0848c34c7e0a6f6eb"
+vpcId: vpc-0848c34c7e0a6f6eb
 
 serviceAccount:
-  create: true
+  annotations:
+    eks.amazonaws.com/role-arn: arn:aws:iam::155950238401:role/AmazonEKSLoadBalancerControllerRole
 
 replicaCount: 4
