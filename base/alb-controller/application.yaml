@@ -4,14 +4,14 @@ metadata:
   name: aws-load-balancer-controller
   namespace: argocd
 spec:
-  project: default
-  sources:
+  project: cluster # default anteriormente
+  source:
     - repoURL: https://aws.github.io/eks-charts
       chart: aws-load-balancer-controller
       targetRevision: '*'
       helm:
         valueFiles:
-          - $values/base/alb-controller/values.yaml
+          - values.yaml       #$values/base/alb-controller/values.yaml 
     - repoURL: https://github.com/juancarlos-cloud/addons-argocd.git
       targetRevision: HEAD
       ref: values
