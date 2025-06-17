@@ -12,7 +12,7 @@ spec:
       helm:
         valueFiles:
           - $values/base/alb-controller/values.yaml
-    - repoURL: https://github.com/MNLOPS/addons-argocd.git
+    - repoURL: https://github.com/juancarlos-cloud/addons-argocd.git
       targetRevision: HEAD
       ref: values
   destination:
