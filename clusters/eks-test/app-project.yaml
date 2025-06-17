@@ -7,7 +7,7 @@ metadata:
     - resources-finalizer.argocd.argoproj.io
 spec:
   sourceRepos:
-    - "https://github.com/MNLOPS/addons-argocd.git"
+    - "https://github.com/juancarlos-cloud/addons-argocd.git"
   destinations:
     - server: https://kubernetes.default.svc
       namespace: kube-system
