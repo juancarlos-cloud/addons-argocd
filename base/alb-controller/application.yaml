@@ -11,7 +11,7 @@ spec:
       targetRevision: '*'
       helm:
         valueFiles:
-          - values.yaml       #$values/base/alb-controller/values.yaml 
+          - #$values/cluster/eks/alb-controller/values.yaml 
     - repoURL: https://github.com/juancarlos-cloud/addons-argocd.git
       targetRevision: HEAD
       ref: values
